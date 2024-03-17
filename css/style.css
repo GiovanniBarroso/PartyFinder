@@ -1,29 +1,10 @@
 @media screen and (min-width: 1024px) { /*Tamaño ordendador*/
 
-/*estilo de la barra de nav*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.contenedor{
-  display: grid;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.container {
-  max-width: 1050px;
-  width: 90%;
-  margin: auto;
-}
-
 .navbar {
-  background-color: aliceblue;
   width: 100%;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  grid-area: nav;
+
 }
 
 .nav-container {
@@ -36,7 +17,8 @@ body {
 .navbar .menu-items {
   display: flex;
 }
-#wrapper{
+
+#wrapper {
   background-color: #899cb1;
   width: 15vw;
   height: 100VH;
@@ -135,14 +117,14 @@ body {
 
 .logo {
   position: absolute;
-  top: 5px;
-  right: 15px;
-  font-size: 1.2rem;
+  right: -50vw;
+  font-size: 1.4rem;
   color: #0e2431;
 }
 
+/*ESTO ES PARA QUE LA BARRA DE TAREA SE VAYA A LA POSICION 0*/
 .nav-container input[type="checkbox"]:checked~.menu-items {
-  transform: translateX(-23vw);
+  transform: translateX(0);
 }
 
 .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
@@ -187,6 +169,7 @@ img{
 
 /* Container Area */ 
 .jumbotron {
+  grid-area: text;
   text-align: center;
 	color: #2c3e50;
 	background-color: #ecf0f1;
