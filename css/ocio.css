@@ -1,24 +1,41 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+body{
+  margin: 0;
+ background-image: url('https://fondosanimados.com/wp-content/uploads/2023/04/neon-1-1920x1080.jpg');
+ background-position: center;
+ background-repeat:repeat;
+ background-size: cover;
 
+
+}
 /*HACER GRID */
 #contenedor {
     display: grid;
-    grid-template-columns: 20vw 60vw 30vw;
+    grid-template-columns: 20vw 65vw 25vw;
     grid-template-areas:
-        "nav nav nav"
+        "nav header ."
         ". contenido ."
     ;
-}
 
+
+}
+header{
+  grid-area: header;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4em;
+  border-bottom: 2px solid #fff;
+}
 .navbar {
     width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+   
     grid-area: nav;
-
+   
 }
 
 .nav-container {
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +47,7 @@
 }
 
 #wrapper {
-    background-color: #899cb1;
+   
     width: 15vw;
     height: 100VH;
     padding: 5vh;
@@ -43,7 +60,7 @@
 
 .navbar .nav-container a {
     text-decoration: none;
-    color: #0e2431;
+    color: #fff;
     font-weight: 500;
     font-size: 1.2rem;
     padding: 0.7rem;
@@ -89,7 +106,7 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #0e2431;
+    background: #fff;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -130,7 +147,7 @@
     position: absolute;
     right: -50vw;
     font-size: 1.4rem;
-    color: #0e2431;
+    color: #fff;
 }
 
 /*ESTO ES PARA QUE LA BARRA DE TAREA SE VAYA A LA POSICION 0*/
@@ -159,11 +176,11 @@
 
 
 .snip1418 {
+ 
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin-top: 15vh;
-  min-width: 230px;
   max-width: 315px;
   width: 100%;
   background: #ffffff;
@@ -172,17 +189,20 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   perspective: 20em;
-  perspective: 20em;
+  border-radius: 10px;
+
 }
 .snip1418 * {
   box-sizing: border-box;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;  
   
 }
+
 .snip1418 img {
-  max-width: 100%;
+ min-width: 100%;
   vertical-align: top;
   position: relative;
+  height: 24vh;
 }
 .snip1418 .add-to-cart {
   position: absolute;
