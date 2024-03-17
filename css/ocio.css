@@ -171,10 +171,6 @@ header{
     display: none;
 }
 
-
-
-
-
 .snip1418 {
  
   font-family: 'Raleway', Arial, sans-serif;
@@ -281,4 +277,23 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 630px){
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(-3vw);
+}
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.navbar .menu-items{
+  width: 150px;
+}
 }
