@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reserva.css">
+    <title>Reserva</title>
+</head>
+<body>
+
+    <div id="todo">
+        <div class="contenedor">
+            <div class="nav">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <div class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Ocio Nocturno</a></li>
+                    <li><a href="#">Teatro</a></li>
+                    <li><a href="#">Al aire libre</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <label for="nombre">Nombre de la reserva:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="num_personas">Número de miembros:</label>
+            <input type="number" id="num_personas" name="num_personas" min="1" required>
+
+            <script src="../js/Personas.js"></script>
+
+            <div id="personas">
+                <!-- Los campos para las personas se generarán dinámicamente aquí -->
+            </div>
+
+            <label for="metodo_pago">Método de Pago:</label>
+            <select id="metodo_pago" name="metodo_pago" required>
+                <option value="">Seleccione...</option>
+                <option value="tarjeta">Tarjeta de Crédito</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+        
+            <input type="submit" value="Reservar">
+        </form>
+    </div>
+    
+</body>
+</html>
