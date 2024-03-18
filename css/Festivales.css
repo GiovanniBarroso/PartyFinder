@@ -1,3 +1,6 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
 body{
     margin: 0;
     background-image: url('https://fondosanimados.com/wp-content/uploads/2023/04/neon-1-1920x1080.jpg');
@@ -219,7 +222,11 @@ header {
   transform-origin: 100% 0;
 
 }
+.add-to-cart{
+font-size: 4em;
 
+
+}
 .snip1418 .add-to-cart i {
   display: inline-block;
   margin-right: 10px;
