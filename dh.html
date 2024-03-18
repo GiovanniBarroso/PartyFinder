@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostrar Valor del Input</title>
+</head>
+<body>
+  <form id="miFormulario">
+    <label for="inputUsuario">Introduce algo:</label>
+    <input type="text" id="inputUsuario" name="inputUsuario">
+    <button type="button" onclick="mostrarValorInput()">Mostrar</button>
+  </form>
+  
+  <!-- Aquí mostraremos el valor dentro de un elemento <p> -->
+  <p id="resultado"></p>
+
+  <script>
+    function mostrarValorInput() {
+      // Paso 1: Obtener el elemento del input
+      var inputElement = document.getElementById('inputUsuario');
+      
+      // Paso 2: Obtener el valor del input
+      var valorInput = inputElement.value;
+      
+      // Paso 3: Mostrar el valor en otro elemento del DOM (un <p>)
+      var resultadoElement = document.getElementById('resultado');
+      resultadoElement.innerText = 'El valor introducido es: ' + valorInput;
+    }
+  </script>
+</body>
+</html>
