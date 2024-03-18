@@ -1,4 +1,4 @@
-#contenedor{
+#contenedor {
   font-family: sans-serif;
   text-align: center;
 }
@@ -8,6 +8,8 @@
 }
 
 #wrapper {
+  border: 3px solid black;
+  border-radius: 10px;
   background-color: #899cb1;
   width: 20vw;
   height: 83.8%;
@@ -151,9 +153,54 @@ img {
   margin-top: 10px;
 }
 
-#futer{
+#futer {
   text-align: center;
   background-color: #fd0000a3;
   border: 3px solid black;
   border-radius: 10px;
+}
+
+/* Estilos para tabletas */
+@media only screen and (max-width: 1024px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    /* Cambia a dos columnas en lugar de tres */
+  }
+
+  img {
+    width: 45vw;
+    /* Redimensiona las imágenes para que se ajusten mejor */
+    height: auto;
+    /* Ajusta la altura automáticamente */
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .menu-items {
+    background-color: rgba(137, 156, 177, 0.5);
+    align-items: center;
+  }
+
+
+  #wrapper {
+    padding: 10%;
+  }
+
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  img {
+    width: 90vw;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
