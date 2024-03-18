@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" href="../img/logo/vanicon2.jpg" type="image/x-icon">
     <title>Reserva</title>
 </head>
+
 <body>
 
     <div id="todo">
@@ -16,11 +18,11 @@
                 <span></span>
                 <span></span>
                 <div class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Ocio Nocturno</a></li>
-                    <li><a href="#">Conciertos</a></li>
-                    <li><a href="#">Al aire libre</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="Ocionocturno.html">Ocio Nocturno</a></li>
+                    <li><a href="Festivales.html">Festivales</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
                 </div>
             </div>
         </div>
@@ -28,14 +30,13 @@
         <form>
             <label for="nombre">Nombre de la reserva:</label>
             <input type="text" id="nombre" name="nombre" required>
-        
+
             <label for="num_personas">Número de miembros:</label>
             <input type="number" id="num_personas" name="num_personas" min="1" required>
 
             <script src="../js/Personas.js"></script>
 
             <div id="personas">
-                <!-- Los campos para las personas se generarán dinámicamente aquí -->
             </div>
 
             <label for="metodo_pago">Método de Pago:</label>
@@ -45,10 +46,11 @@
                 <option value="efectivo">Efectivo</option>
                 <option value="transferencia">Transferencia Bancaria</option>
             </select>
-        
+
             <input type="submit" value="Reservar">
         </form>
     </div>
-    
+
 </body>
+
 </html>
