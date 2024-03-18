@@ -1,3 +1,12 @@
+body{
+  margin: 0;
+  background-image: url('https://fondosanimados.com/wp-content/uploads/2023/04/neon-1-1920x1080.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+
+}
+
 #contenedor {
   font-family: sans-serif;
   text-align: center;
@@ -112,7 +121,6 @@
   color: #000000;
 }
 
-/*ESTO ES PARA QUE LA BARRA DE TAREA SE VAYA A LA POSICION 0*/
 .nav-container input[type="checkbox"]:checked~.menu-items {
   transform: translateX(0);
 }
@@ -147,11 +155,8 @@
 
 img {
   width: 100%;
-  /* Hacer que las imágenes ocupen todo el ancho disponible */
   height: auto;
-  /* Ajustar la altura automáticamente */
   border-radius: 10px;
-  /* Añadir bordes redondeados a las imágenes */
 }
 
 .jumbotron {
@@ -172,29 +177,24 @@ img {
 }
 
 
-
-
 /* Estilos para tabletas */
 @media only screen and (max-width: 1024px) {
   .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     gap: 20px;
   }
 
   img {
-    width: 45vw; 
+    width: 45vw;
     height: auto;
   }
 
   img:nth-child(9) {
-    margin: auto; 
+    margin: auto;
   }
 }
-
-
-
 
 
 /* Estilos para dispositivos móviles */
@@ -203,7 +203,6 @@ img {
     background-color: rgba(137, 156, 177, 0.5);
     align-items: center;
   }
-
 
   #wrapper {
     padding: 10%;
