@@ -1,6 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('https://fondosanimados.com/wp-content/uploads/2023/04/neon-1-1920x1080.jpg');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 #todo {
