@@ -6,9 +6,8 @@ body{
  background-position: center;
  background-repeat:repeat;
  background-size: cover;
-
-
 }
+
 /*HACER GRID */
 #contenedor {
     display: grid;
