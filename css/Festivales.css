@@ -6,8 +6,6 @@ body{
     background-position: center;
     background-repeat:repeat;
     background-size: cover;
-
-
 }
 /*HACER GRID */
 #contenedor {
@@ -15,8 +13,7 @@ body{
     grid-template-columns: 20vw 65vw 25vw;
     grid-template-areas:
         "nav header ."
-        ". contenido ."
-    ;
+        ". contenido .";
 
 
 }
@@ -29,7 +26,6 @@ header{
 }
 .navbar {
     width: 100%;
-   
     grid-area: nav;
    
 }
@@ -46,8 +42,7 @@ header{
     display: flex;
 }
 
-#wrapper {
-   
+#wrapper { 
     width: 15vw;
     height: 100VH;
     padding: 5vh;
