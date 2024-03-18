@@ -8,7 +8,7 @@
 		content="Encuentra los mejores eventos y actividades de ocio en PartyFinder. Teatro, fiestas, eventos especiales y más.">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="img/logo/vanicon2.jpg" type="image/x-icon">
-	<script src="js/edad.js"></script>
+	<scr src="js/edad.js"></script>
 </head>
 
 <body>
@@ -23,9 +23,11 @@
 						<span class="line line2"></span>
 						<span class="line line3"></span>
 					</div>
-
+				
+				
 					<div class="logo">
-						<h1>🪩​ PartyFinder 🎭​</h1>
+						<h1>🪩​ PartyFinder 🎭  ​​</h1>
+					
 					</div>
 					<div class="menu-items">
 						<div id="wrapper">
@@ -40,10 +42,11 @@
 				</div>
 			</div>
 		</nav>
-
+	
+	
 
 		<div class="jumbotron">
-			<h1>¿ A qué estás esperando ?</h1>
+			<h1>¿ A qué estás esperando ? <p id="username"></p></h1>
 			<p>Aún no sabes lo que te has estado perdiendo.. te dejo por aquí unas imágenes para que te hagas una idea.
 			</p>
 		</div>
@@ -113,7 +116,16 @@
 					style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
 					src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></p>
 	</footer>
-
+	<script>
+		// Obtener el valor de username desde localStorage
+		var username = localStorage.getItem('username');
+		// Verificar si el elemento con id 'username' existe
+		var usernameElement = document.getElementById('username');
+		if (username && usernameElement) {
+			// Si se encuentra el valor y el elemento existe, mostrar el nombre de usuario
+			usernameElement.textContent = '¡Bienvenido, ' + username + '!';
+		}
+	</script>
 </body>
 
 </html>
