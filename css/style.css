@@ -8,12 +8,14 @@
 }
 
 #wrapper {
+  align-items: center;
+  margin-top: 20px;
   border: 3px solid black;
   border-radius: 10px;
   background-color: #899cb1;
   width: 20vw;
-  height: 83.8%;
-  padding: 5vh;
+  height: auto;
+  padding: 10vh;
 }
 
 .navbar .nav-container li {
