@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +28,10 @@
 
                         </div>
                         <div class="screen-body-item">
-                            <form action="contacto.html" method="get">
+                            <form action="/index.html" method="get">
                                 <div class="app-form">
                                     <div class="app-form-group">
-                                        <input class="app-form-control" placeholder="Nombre Usuario" required>
+                                        <input class="app-form-control" id="username" placeholder="Nombre Usuario" required>
                                     </div>
                                     <div class="app-form-group">
                                         <input class="app-form-control" type="password" placeholder="Contraseña"
@@ -69,13 +68,16 @@
 
                         </div>
                         <div class="screen-body-item">
-                            <form action="contacto.html" method="get">
+                            <form action="/index.html" method="get">
                                 <div class="app-form">
                                     <div class="app-form-group">
                                         <input class="app-form-control" type="text" placeholder="Nombre" required>
                                     </div>
                                     <div class="app-form-group">
                                         <input class="app-form-control" type="text" placeholder="Apellidos" required>
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" type="text" placeholder="Nombre Usuario" id="username" required>
                                     </div>
                                     <div class="app-form-group">
                                         <input class="app-form-control" type="email" placeholder="Email" required>
@@ -100,6 +102,16 @@
 
 
     </div>
+    <script>
+        // Guardar el valor del campo username en localStorage cuando se envíe el formulario
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir que el formulario se envíe
+            var username = document.getElementById('username').value;
+            localStorage.setItem('username', username); // Almacenar el valor en localStorage
+            // Redireccionar a la siguiente página
+            window.location.href = '/index.html';
+        });
+    </script>
 </body>
 
 </html>
